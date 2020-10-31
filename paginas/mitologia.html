@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mitología F7</title>
+    <link rel="stylesheet" href="../styles.css">
+    <link rel="icon" href="../imagenes/f7logo.png" type="image" sizes="16x16">
+</head>
+
+<div id="mySidenav" class="sidenav">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()" style="background-color: white; color: black">&times;</a>
+  <a href="../index.html">Principal</a>
+  <a href="../paginas/proyectos.html">Proyectos</a>
+  <a href="../paginas/mitologia.html">Mitología</a>
+  <a href="../paginas/miembros.html">Miembros</a>
+</div>
+
+<!-- Menu Lateral -->
+<span onclick="openNav()" class="botones">&equiv; MENU</span>
+
+<!-- Contenido Principal (Dentro del DIV) -->
+<div id="main">
+
+  <header class="header">
+      <h1><a href="../index.html">
+      <img src="../imagenes/F7title.png">
+      </a></h1>
+      <hr class="solid">
+  </header>
+
+    <body id="grad1">
+      <div class="header">
+        <h2>Mitología</h2>
+      </div>
+
+    <button type="button" class="colapsable"><b>CF7-57</b></button>
+      <div class="contenido">
+        <h1>CF7-57 BayoNora:</h1>
+        <hr class="solid">
+        <img src="../imagenes/bayonora.png"> 
+        <p>Fue un descubrimiento que costó un gran esfuerzo; ya que sin siquiera mirarte, te mataba.<br>Alrededor de 80 niños de 15-16 años murieron para poder saber de la existencia de esta criatura<br/><br/>Le gusta matar y tryhardear como una loca en el CS:GO. Lleva hacks, obviamente, y le encanta el Burn y el salmón ahumado.</p><hr>
+        <p><strong>Nivel de Peligro:</strong> Paso de leerlo</p>
+      </div>
+
+    <button type="button" class="colapsable"><b>CF7-01</b></button>
+      <div class="contenido">
+        <h1>CF7-01 El BluAins:</h1>
+        <hr class="solid">
+        <img src="../imagenes/bluains.png"> 
+        <p>El BLuAiNs fue la primera criatura descubierta por los F7.<br>Es extremadamente idiota. Su vocabulario apenas comprende la lógica y la coherencia.<br/><br/>"Aaaaaaaaaa s9" - Es tan solo uno de los muchos gritos que produce esta horripilante criatura.</p><hr>
+        <p><strong>Nivel de Peligro:</strong> 69</p>
+      </div>
+
+    <button type="button" class="colapsable"><b>CF7-x2</b></button>
+      <div class="contenido">
+        <h1>CF7-x2 Pablo Hernandez:</h1>
+        <hr class="solid">
+        <img src="../imagenes/PabloHernandez.png"> 
+        <p>No es que sea la criatura más peligrosa, ni la más extraña, pero sin duda es una criatura excepcional debido a su habilidad digna de un Dios para escapar de la cárcel.<br/>Tenía una vida normal y pacífica, pero un día decidió matar a su novia porque esta no quiso hacer un trío.<br/><br/>En el primer intento, Pablo Hernandez, usó su coche para intentar matarla a disparos con una UZI, pero se olvidó de disparar y le metieron a la cárcel por intento de asesinato.<br/>Otros 3 intentos más en los que se olvidó de disparar y fue condenado a cada vez más años de cárcel, hasta que un día, el 5to intento de asesinar a su pareja recordó que tenía que disparar y la asesinó.<br/>Intentó huir del país, pero en la aduana le pillaron.<br/><br/> Se escapó de la cárcel para matar al resto de su familia, se escapó de la cárcel más de 40 veces, acabó volviendo allí solo para cenar pizza los domingos y luego escaparse de nuevo.<br/><br/>Se le condenó a 1.333.647 años de cárcel y acabó muriendo por la peste negra, aunque de seguro que se escapa de la cárcel de la muerte.</p><hr>
+        <p><strong>Nivel de Peligro:</strong> 1.333.647</p>
+      </div>
+</div>
+
+    <script>
+        var coll = document.getElementsByClassName("colapsable");
+        var i;
+        
+        for (i = 0; i < coll.length; i++) {
+          coll[i].addEventListener("click", function() {
+            this.classList.toggle("active");
+            var content = this.nextElementSibling;
+            if (content.style.display === "block") {
+              content.style.display = "none";
+            } else {
+              content.style.display = "block";
+            }
+          });
+        }
+        function openNav() {
+      document.getElementById("mySidenav").style.width = "250px";
+    }
+    
+    function closeNav() {
+      document.getElementById("mySidenav").style.width = "0";
+    }
+        </script>
+        
+</body>
+</html>

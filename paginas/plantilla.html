@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="es">
+
+
+<div id="mySidenav" class="sidenav">
+    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()" style="background-color: white; color: black">&times;</a>
+    <a href="./proyectos.html">Proyectos</a>
+    <a href="./mitologia.html">Mitología</a>
+    <a href="./miembros.html">Miembros</a>
+  </div>
+  
+<!-- Menu Lateral -->
+  <span onclick="openNav()" class="botones">MENU</span>
+  
+<!-- Contenido Principal (Dentro del DIV) -->
+  <div id="main">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Five Seven Oficial</title>
+        <link rel="stylesheet" href="../styles.css">
+        <link rel="icon" href="../imagenes/f7logo.png" type="image" sizes="16x16">
+    </head>
+
+    <header class="header">
+        <h1><a href="../index.html">
+        <img src="../imagenes/F7title.png">
+        </a></h1>
+        <hr class="solid">
+    </header>
+    
+    <body id="grad1">
+
+    </body>
+
+  </div>
+
+  <script>
+    function openNav() {
+      document.getElementById("mySidenav").style.width = "250px";
+    }
+    
+    function closeNav() {
+      document.getElementById("mySidenav").style.width = "0";
+    }
+    </script>
+
+
+</html>

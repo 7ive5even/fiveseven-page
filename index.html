@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Five Seven Oficial</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="./imagenes/f7logo.png" type="image" sizes="16x16">
+</head>
+
+<div id="mySidenav" class="sidenav">
+    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()" style="background-color: white; color: black; text-align: left;">&times;</a>
+    <a href="./index.html">Principal</a>
+    <a href="./paginas/proyectos.html">Proyectos</a>
+    <a href="./paginas/mitologia.html">Mitología</a>
+    <a href="./paginas/miembros.html">Miembros</a>
+  </div>
+  
+<!-- Menu Lateral -->
+  <span onclick="openNav()" class="botones">&equiv; MENU</span>
+  
+<!-- Contenido Principal (Dentro del DIV) -->
+  <div id="main">
+
+
+    <header class="header">
+        <h1><a href="./index.html">
+        <img src="./imagenes/F7title.png">
+        </a></h1>
+        <hr class="solid">
+    </header>
+    
+    <body id="grad1">
+<article>
+    <div class="parrafo">
+        <h1><strong>FiveSeven Corp.</strong></h1>
+        <p>Un grupo de amigos que parece más una sociedad en sí.</p>
+        <p>Solo almacenamos lo que hacemos para reírnos en el futuro.</p>
+        <p><a href="https://www.youtube.com/channel/UCk9sO_KpDUGr0EBUel6B8ZA"><img src="./imagenes/campanita.png"></a></p>
+    </div>
+</article>
+    </body>
+
+  </div>
+
+  <script>
+    function openNav() {
+      document.getElementById("mySidenav").style.width = "250px";
+      document.getElementById("main").style.marginLeft = "250px";
+      document.body.style.backgroundColor = "rgba(0,0,0,0.4)";
+    }
+    
+    function closeNav() {
+      document.getElementById("mySidenav").style.width = "0";
+      document.getElementById("main").style.marginLeft= "0";
+      document.body.style.backgroundColor = "white";
+    }
+    </script>
+
+
+</html>
