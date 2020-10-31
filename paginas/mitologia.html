@@ -12,14 +12,48 @@
     <h1><a href="../index.html">
     <img src="../imagenes/F7title.png">
     </a></h1>
+    <hr class="solid">
 </header>
 
 <body id="grad1">
 
-    <div>
-        <h1 style="margin: 30px;">Mitología</h1>
-        <p>Bayonora</p>
-        </div>
+    <button type="button" class="colapsable"><b>BAYONORA</b></button>
+    <div class="contenido">
+    <h1>Bayonora</h1>
+    <img src="../imagenes/bayonora.png"> 
+    <p>DIOS</p>
+    </div>
+
+    <button type="button" class="colapsable"><b>BLUAINS</b></button>
+    <div class="contenido">
+    <h1>Bayonora</h1>
+    <img src="../imagenes/bayonora.png"> 
+    <p>DIOS</p>
+    </div>
+
+    <button type="button" class="colapsable"><b>LUCAS</b></button>
+    <div class="contenido">
+    <h1>Bayonora</h1>
+    <img src="../imagenes/bayonora.png"> 
+    <p>DIOS</p>
+    </div>
+
+    <script>
+        var coll = document.getElementsByClassName("colapsable");
+        var i;
+        
+        for (i = 0; i < coll.length; i++) {
+          coll[i].addEventListener("click", function() {
+            this.classList.toggle("active");
+            var content = this.nextElementSibling;
+            if (content.style.display === "block") {
+              content.style.display = "none";
+            } else {
+              content.style.display = "block";
+            }
+          });
+        }
+        </script>
         
 </body>
 </html>
