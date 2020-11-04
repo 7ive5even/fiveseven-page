@@ -1,12 +1,29 @@
-/* * {
-    color: white;
+* {
+    font-family: Verdana, Arial, sans-serif;
 }
-*/
+
 
 #grad1 {
-    height: 900px;
+    position: relative;
+    min-height: 100%;
     background-image: linear-gradient(to right, black, rgb(22, 22, 22));
 }
+
+footer {
+    text-align: center;
+    padding: 3px;
+    color: white;
+    clear: both;
+    width: 100%;
+    position: absolute;
+    text-decoration: none;
+    margin-top: 100px;
+  }
+
+  footer a {
+    margin-top: 100px;
+    text-decoration: none;
+  }
 
 /* Encabezado */
 
@@ -19,7 +36,6 @@
     width: 25%;
     height: 100%;
     padding: 1px;
-    margin-left: 0px;
     margin-top: 10px;
     border: 1px solid;
     background-color: black;
@@ -27,7 +43,8 @@
 }
 
 .header h1 {
-    margin-left: 30px;
+    margin-top: 50px;
+    margin-left: 0px;
     margin-bottom: 10px;
 }
 
@@ -47,7 +64,6 @@
 
 .header ul {
     color: white;
-    font-family: Arial, Helvetica, sans-serif;
     margin-left: 10px;
     background-color: white;
     color: black;
@@ -58,9 +74,8 @@
     width: 20%;
 }
 
-.header ol{
+.header ol {
     color: white;
-    font-family: Arial, Helvetica, sans-serif;
     margin-left: 10px;
     background-color: white;
     color: black;
@@ -75,10 +90,10 @@
 
 .parrafo {
     color: black;
-    border: 3px solid white;
+    /*border: 3px solid white;*/
     border-radius: 25px;
     padding: 10px;
-    background-image: linear-gradient(to top, white, rgb(99, 99, 99));
+    background-image: linear-gradient(to right, white, rgb(99, 99, 99));
     width: 50%;
     text-decoration: none;
 }
@@ -88,6 +103,63 @@
     font-style: italic;
     color: black;
 }
+
+/* Menu Nav */
+
+.menunav ul {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-image: linear-gradient(to right, black, rgba(0, 0, 0, 0.356));
+    background-position: center;
+    border-bottom: 1px solid white;
+}
+
+.menunav  {
+    object-fit: cover;
+}
+
+.menunav li {
+    /*border: 1px solid white;*/
+    float: left;
+    text-decoration: none;
+    width: 150px;
+}
+
+.menunav ul li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    background-color: black;
+    border-left: 1px solid white;
+    border-top: 1px solid white;
+    border-right: 1px solid white;
+    border-bottom: 0px solid rgb(0, 0, 0);
+}
+
+.menunav > ul > li:not(:nth-child(1)) a {
+    background-image: linear-gradient(to bottom right, rgb(32, 32, 32), rgb(0, 0, 0));
+    border-bottom: 0px solid white;
+    border: 0px solid white;
+    
+}
+
+/*.menunav strong {
+    background-color: black;
+}*/
+
+.menunav li a:hover {
+    background-image: url("./imagenes/cabeza.gif");
+    color:white;
+  }
+
+/* Fin Menunav */
 
 .tablaestilo table, th, td {
     color: white;
@@ -112,7 +184,6 @@ hr.solid {
 
 .botones {
     font-size: large; 
-    font-family: Arial, Helvetica, sans-serif;
     border-radius: 15px;
     text-decoration: none;
     text-transform: uppercase;
@@ -125,7 +196,6 @@ hr.solid {
 
 .botones:hover {
     font-size: large; 
-    font-family: Arial, Helvetica, sans-serif;
     border-radius: 15px;
     text-decoration: none;
     text-transform: uppercase;
@@ -142,7 +212,7 @@ hr.solid {
     padding: 10px;
     display: none;
     overflow: hidden;
-    background-image: url("./imagenes/original.gif"); /* linear-gradient(to top, black, rgb(19, 1, 1)); <- Por si acaso */
+    background-image: url("./imagenes/cabeza.gif"); /* linear-gradient(to top, black, rgb(19, 1, 1)); <- Por si acaso */
     background-size: 1920px 500px;
     border: 1px solid white;
     margin-left: 30px;
@@ -161,12 +231,12 @@ hr.solid {
     vertical-align: top;
     border-radius: 25px;
     border: 1px solid white;
+    background-color: rgba(255, 255, 255, 0.61);
 }
 
 .contenido p {
     display: inline-block;
     margin-left: 10px;
-    font-family: Arial, Helvetica, sans-serif;
     border: 1px white;
     color: white;
     background-color: rgba(0, 0, 0, 0.76); 
@@ -204,58 +274,17 @@ hr.solid {
 
 /* Fin Parte Colapsable */
 
-/* Menu lateral */
-.sidenav {
-    height: 100%; 
-    width: 0; 
-    position: fixed; 
-    z-index: 1;
-    top: 0; 
-    left: 0;
-    background-image: /*url(./imagenes/sizenavback.png);*/ linear-gradient(to bottom, black, rgb(15, 15, 15));
-    background-size: 100%;
-    background-color: rgb(0, 0, 0);
-    overflow-x: hidden;
-    transition: 0.5s;
-  }
-  
-  .sidenav a {
-    padding: 8px 8px 8px 32px;
-    text-decoration: none;
-    font-size: 25px;
-    color: white;
-    display: block;
-    transition: 0.3s;
-    border: 1px solid white;
-    background-color: black;
-  }
-  
-  .sidenav a:hover {
-    color: black;
-    background: white;
-  }
-  
-  /* Position and style the close button (top right corner) */
-  .sidenav .closebtn {
+
+.module-border-wrap {
+    max-width: 1500px;
+    padding: 1rem;
     position: relative;
-    top: 0;
-    font-size: 25px;
-    margin-left: 0px;
-    color: black;
+    background: linear-gradient(to right, rgb(197, 0, 0), rgba(95, 69, 69, 0));
+    padding: 3px;
   }
   
-  .closebtn:hover {
-      color: rgb(255, 166, 0);
-  }
-  
-  /* Style page content - use this if you want to push the page content to the right when you open the side navigation */
-  #main {
-    transition: margin-left .5s;
-    padding: 10px;
-  }
-  
-  /* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
-  @media screen and (max-height: 450px) {
-    .sidenav {padding-top: 15px;}
-    .sidenav a {font-size: 18px;}
+  .module {
+    background-image: linear-gradient(to right, rgb(255, 255, 255), rgba(150, 150, 150, 0.781));
+    color: rgb(0, 0, 0);
+    padding: 20px;
   }

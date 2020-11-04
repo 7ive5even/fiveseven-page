@@ -9,54 +9,34 @@
     <link rel="icon" href="./imagenes/f7logo.png" type="image" sizes="16x16">
 </head>
 
-<div id="mySidenav" class="sidenav">
-    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()" style="background-color: white; color: black; text-align: left;">&times;</a>
-    <a href="./index.html">Principal</a>
-    <a href="./paginas/proyectos.html">Proyectos</a>
-    <a href="./paginas/mitologia.html">Mitología</a>
-    <a href="./paginas/miembros.html">Miembros</a>
+<header class="header">
+  <h1><a href="./index.html">
+  <img src="./imagenes/F7title.png">
+  <hr class="solid">
+  </a></h1>
+</header>
+
+<body id="grad1">
+  <div class="menunav">
+  <ul>
+    <li><a href="./index.html" id="menunav"><strong>Principal</strong></a></li>
+    <li><a href="./paginas/proyectos.html">Proyectos</a></li>
+    <li><a href="./paginas/mitologia.html">Mitología</a></li>
+    <li><a href="./paginas/miembros.html">Miembros</a></li>
+    <li><a href="./paginas/ProyectoExtincion.html">Rol</a></li>
+  </ul>
   </div>
-  
-<!-- Menu Lateral -->
-  <span onclick="openNav()" class="botones">&equiv; MENU</span>
-  
-<!-- Contenido Principal (Dentro del DIV) -->
-  <div id="main">
-
-
-    <header class="header">
-        <h1><a href="./index.html">
-        <img src="./imagenes/F7title.png">
-        </a></h1>
-        <hr class="solid">
-    </header>
-    
-    <body id="grad1">
-<article>
     <div class="parrafo">
         <h1><strong>FiveSeven Corp.</strong></h1>
         <p>Un grupo de amigos que parece más una sociedad en sí.</p>
         <p>Solo almacenamos lo que hacemos para reírnos en el futuro.</p>
         <p><a href="https://www.youtube.com/channel/UCk9sO_KpDUGr0EBUel6B8ZA"><img src="./imagenes/campanita.png"></a></p>
     </div>
-</article>
     </body>
-
   </div>
 
-  <script>
-    function openNav() {
-      document.getElementById("mySidenav").style.width = "250px";
-      document.getElementById("main").style.marginLeft = "250px";
-      document.body.style.backgroundColor = "rgba(0,0,0,0.4)";
-    }
-    
-    function closeNav() {
-      document.getElementById("mySidenav").style.width = "0";
-      document.getElementById("main").style.marginLeft= "0";
-      document.body.style.backgroundColor = "white";
-    }
-    </script>
-
+<footer>
+    <a rel="license" href="http://creativecommons.org/licenses/by-nc-nd/4.0/"><img alt="Licencia de Creative Commons" style="border-width:0" src="https://i.creativecommons.org/l/by-nc-nd/4.0/88x31.png" /></a><br />Este obra está bajo una <a rel="license" href="http://creativecommons.org/licenses/by-nc-nd/4.0/">licencia de Creative Commons Reconocimiento-NoComercial-SinObraDerivada 4.0 Internacional</a>.
+</footer>
 
 </html>
