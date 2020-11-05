@@ -136,19 +136,27 @@ footer {
     padding: 14px 16px;
     text-decoration: none;
     background-color: black;
+    border-left: 1px solid white;
+    border-top: 1px solid white;
+    border-right: 1px solid white;
+    border-bottom: 0px solid rgb(0, 0, 0);
 }
 
-/*.menunav > ul > li:not(:nth-child(1)) a {
+.menunav > ul > li:not(:nth-child(1)) a {
     background-image: linear-gradient(to bottom right, rgb(32, 32, 32), rgb(0, 0, 0));
     border-bottom: 0px solid white;
     border: 0px solid white;
     
+}
+
+/*.menunav strong {
+    background-color: black;
 }*/
 
 .menunav ul li a:hover {
-    background-image: url("./imagenes/cabeza.gif") !important;
+    background-image: url("./imagenes/cabeza.gif");
     color:white;
-    border-top: 1px solid white;
+    border: 1px solid white;
   }
 
 /* Fin Menunav */
