@@ -24,43 +24,81 @@
         <li><a href="./mitologia.html" style="background-image: linear-gradient(to bottom right, rgb(32, 32, 32), rgb(0, 0, 0));">Mitología</a></li>
         <li><a href="./miembros.html" style="background-color: black; border-top: 1px solid white; border-left: 1px solid white; border-right: 1px solid white;"><strong>Miembros</strong></a></li>
         <li><a href="./ProyectoExtincion.html" style="background-image: linear-gradient(to bottom right, rgb(32, 32, 32), rgb(0, 0, 0));">Rol</a></li>
+        <li><a href="./Mods.html" style="background-image: linear-gradient(to bottom right, rgb(32, 32, 32), rgb(0, 0, 0));">Mods</a></li>
       </ul>
     </div>
-        <div>
-            <table class="tablaestilo">
-                <tr>
-                    <th>Admin</th>
-                    <th>Originales</th>
-                    <th>Miembros</th>
-                    <th colspan="5">Nuevos</th>
-                    <th>F7</th>
-                </tr>
-                <tr>
-                    <td rowspan="3">Mark</td>
-                    <td>Max</td>
-                    <td>Oihan</td>
-                    <td>Lucas</td>
-                    <td>57</td>
-                </tr>
-                <tr>
-                    <td>Fran</td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
+    <button type="button" class="colapsable"><b>Bayo</b></button>
+      <div class="contenidomiembro">
+        <h1>Admin Mark:</h1>
+        <hr class="solid">
+        <img src="../imagenes/admin.png"> 
+        <p>El Admin.</p><hr>
+      </div>
 
-                </tr>
-                <tr>
-                    <td>Samuel</td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
+    <button type="button" class="colapsable"><b>BluAins</b></button>
+      <div class="contenidomiembro">
+        <h1>Original Max:</h1>
+        <hr class="solid">
+        <img src="../imagenes/bluains.png"> 
+        <p>Le entran.</p><hr>
+      </div>
 
-                </tr>
-                
-            </table>
+    <button type="button" class="colapsable"><b>Hydra55</b></button>
+      <div class="contenidomiembro">
+        <h1>Original Fran:</h1>
+        <hr class="solid">
+        <img src="../imagenes/hydra.png"> 
+        <p>Es manco.</p><br/>
+      </div>
 
+      <button type="button" class="colapsable"><b>DonoGT</b></button>
+      <div class="contenidomiembro">
+        <h1>Original Samuel:</h1>
+        <hr class="solid">
+        <img src="../imagenes/PabloHernandez.png"> 
+        <p>Es medio puto.</p><br/>
+      </div>
 
-        </div>
+      <button type="button" class="colapsable"><b>ShinryG</b></button>
+      <div class="contenidomiembro">
+        <h1>Miembro Oihan:</h1>
+        <hr class="solid">
+        <img src="../imagenes/shinry.png"> 
+        <p>Es un maestro en el arte de frenar pijas con el culo.</p><br/>
+      </div>
+
+      <button type="button" class="colapsable"><b>AstroStar500</b></button>
+      <div class="contenidomiembro">
+        <h1>Recluta Lucas:</h1>
+        <hr class="solid">
+        <img src="../imagenes/astro.png"> 
+        <p>Se tira al admin.</p><br/>
+      </div>
+</div>
+
+    <script>
+        var coll = document.getElementsByClassName("colapsable");
+        var i;
+        
+        for (i = 0; i < coll.length; i++) {
+          coll[i].addEventListener("click", function() {
+            this.classList.toggle("active");
+            var content = this.nextElementSibling;
+            if (content.style.display === "block") {
+              content.style.display = "none";
+            } else {
+              content.style.display = "block";
+            }
+          });
+        }
+        function openNav() {
+      document.getElementById("mySidenav").style.width = "250px";
+    }
+    
+    function closeNav() {
+      document.getElementById("mySidenav").style.width = "0";
+    }
+        </script>
 
     </body>
 

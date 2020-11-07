@@ -93,7 +93,7 @@ footer {
     /*border: 3px solid white;*/
     padding: 10px;
     background-image: linear-gradient(to right, white, rgb(180, 180, 180));
-    width: 98%;
+    width: 99%;
     text-decoration: none;
 }
 
@@ -101,6 +101,40 @@ footer {
     text-decoration: none;
     font-style: italic;
     color: black;
+}
+
+.modparrafo a {
+    text-decoration: none;
+    color: black;
+    text-align: center;
+    font-size: x-large;
+    border: 2px solid black;
+    border-radius: 15px;
+    display: inline-block;
+    padding: 5px;
+    background-image: linear-gradient(to bottom, white, rgb(185, 185, 185));
+}
+
+.modparrafo {
+    color: black;
+    /*border: 3px solid white;*/
+    padding: 10px;
+    background-image: linear-gradient(to right, white, rgb(180, 180, 180));
+    width: 99%;
+    text-decoration: none; 
+    text-align: center;
+}
+
+.modparrafo img {
+    display: inline-block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 30%;
+}
+
+.modparrafo h1 {
+    font-size: 300%;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
 /* Menu Nav */
@@ -113,7 +147,7 @@ footer {
     margin: 0;
     padding: 0;
     overflow: hidden;
-    background-image: linear-gradient(to right, black, rgba(0, 0, 0, 0.356));
+    background-image: linear-gradient(to right, black, rgb(0, 0, 0));
     background-position: center;
     border-bottom: 1px solid white;
 }
@@ -249,6 +283,42 @@ hr.solid {
     display: block;
     width: 25%;
   }
+
+  .contenidomiembro {
+    padding: 10px;
+    display: none;
+    overflow: hidden;
+    background-image: url("./imagenes/cabeza.gif"); /* linear-gradient(to top, black, rgb(19, 1, 1)); <- Por si acaso */
+    background-size: 1920px 500px;
+    border: 1px solid white;
+    margin-left: 30px;
+}
+
+.contenidomiembro h1 {
+    margin: 1px;
+    margin-bottom: 15px;
+    color: white;
+}
+
+.contenidomiembro img {
+    width: 100px;
+    height: 100px;
+    display: inline-block;
+    vertical-align: top;
+    border-radius: 25px;
+    border: 1px solid white;
+    background-color: rgba(255, 255, 255, 0.61);
+}
+
+.contenidomiembro p {
+    display: inline-block;
+    margin-left: 10px;
+    border: 1px white;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.76); 
+    padding: 10px; 
+    border-radius: 25px;
+}
 
 .active {
     background-color: black;
